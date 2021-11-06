@@ -9,7 +9,7 @@ RUN apt-get -qq update \
     && apt-get -qq install --no-install-recommends \
         qtbase5-dev build-essential autoconf libssl-dev gcc-multilib g++-multilib \
         lzip rpm python libcurl4 git git-lfs ssh unzip libarchive-tools \
-        libxtst6 libsecret-1-dev libopenjp2-tools curl gettext-base \
+        libxtst6 libsecret-1-dev libopenjp2-tools curl gettext-base jq \
     && apt-get purge -y --auto-remove && rm -rf /var/lib/apt/lists/*
 
 # Intall NodeJS
